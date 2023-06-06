@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    // font-size: 67.5%;
+}
+
+
+
+
+.home {
+    padding: 2rem;
+    margin: 0;
+    height: 100vh;
+    background-image: url(../img/background-pizza.jpg);
+    background-size: cover;
+
+    header { 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(230, 222, 222, 0.657);
+        margin: 0rem 3rem  ;
+
+        h1 {
+            margin: 1rem;
+            font-weight: 100;
+        }
+    }
+    
+    .container {
+        
+        display: flex;
+        width: 90%;
+        margin:5rem auto;
+        justify-content: space-between;
+        
+
+        .box {
+            width: 30%;
+            text-align: center;
+            flex-direction: column;
+            margin: 1rem;
+            color: white;
+
+            hr{
+                width: 80%;
+            }
+
+            h2 {
+                font-size: 1rem;
+
+            }
+        }
+    }
+}
+
+
+
+.newOrder {
+    background-color: rgb(0, 105, 148);
+}
+
+.Orders {
+    background-color: rgb(145, 29, 0);
+}
+
+.payOrder {
+    background-color: rgb(1, 145, 48);
+}
