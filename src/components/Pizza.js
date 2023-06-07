@@ -1,11 +1,9 @@
-import { add, createOrder } from '../slices';
+import { add } from '../slices';
 import { useDispatch} from 'react-redux';
 import React from 'react'
 
 const Pizza = ({ name, img, price, id }) => {
   const dispatch = useDispatch();
-  // dispatch(createOrder(0));
-     
 
   const addToOrders = (pizza) => {
     dispatch(add(pizza));

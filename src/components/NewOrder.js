@@ -1,13 +1,12 @@
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import choiceList from './Menus';
 import Pizza from './Pizza';
 import OrderDetails from './OrderDetails';
-
+import Header from './Header';
 
 
 
 const NewOrder = () => {
-  const navigate = useNavigate();
   const   idOrder  = useParams()
   console.log(idOrder)
   const pizzaRender = choiceList.map((item) => {
@@ -18,12 +17,8 @@ const NewOrder = () => {
 
   return (
     <div className='home'>
-      <header className='header'>
-        <i onClick={() => {
-          navigate('/')
-        }}>🍕</i>
-        <h1>Pizza Reeflex</h1>
-      </header>
+      <Header/>
+
       <div className='ordersContainer'>
         <div className='pizzaRenderContainer'>
           {pizzaRender}

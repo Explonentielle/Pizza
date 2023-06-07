@@ -112,3 +112,78 @@
 
     }
 }
+
+
+
+
+// ----------------------------------------
+
+
+#order {
+    color:black;
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    margin: 0rem 3rem  ;
+    padding-bottom: 0.5rem;
+
+    #form {
+        width: 100%;
+        font-weight: 700;
+        padding: 1vw
+    }
+
+    .cmdDetail {
+        background-color: rgb(235, 235, 235);
+        margin: 1vw 1vw;
+        text-align: left;
+        padding: 1vw;
+
+        #detailtxt {
+            font-size: 150%;
+            font-weight: 600;
+            margin: 0 auto;
+        }
+
+        .encartItem {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .encartItemElement {
+                padding: 1vw;
+            }
+        }
+        
+        #cmdEnd {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            .cmdEndElement {
+                width: 40vw;
+                padding: 0.5vw;
+                color:white;
+            }
+        }
+    }
+}
+
+
+#payorder {
+    color:black;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 1rem 3rem  ;
+    padding: 1rem;
+}
+
+
+.statutcmd {
+    padding: 1rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.regle {
+        background-color:rgb(1, 145, 48)
+    }
