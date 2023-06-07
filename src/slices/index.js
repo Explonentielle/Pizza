@@ -20,7 +20,12 @@ const initialState = {
         //             id: 1,
         //             name: "margarita",
         //             price: 7.90
-        //         }
+        //         },
+        //         {
+        //           id: 3,
+        //           name: "reine",
+        //           price: 8.90
+        //       }
         //     ]
         // }
     ]
@@ -44,6 +49,9 @@ const dataSlice = createSlice({
                 ]
               });
         },
+        // compress: (state, action) => {
+        //   pizzas[0].concat(pizzas[1])
+        // },
     }
 })
 

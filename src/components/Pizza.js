@@ -6,6 +6,26 @@ import React, { useState } from 'react'
 
 const Pizza = ({ name, img, price, id }) => {
   const dispatch = useDispatch();
+
+//   const pizzatest = [
+//     {
+//         id: 11,
+//         total: 7.90,
+//         pizzas: [
+//             {
+//                 id: 1,
+//                 name: "margarita",
+//                 price: 7.90
+//             },
+//             {
+//               id: 3,
+//               name: "reine",
+//               price: 8.90
+//           }
+//         ]
+//     }
+// ]
+
   const addToOrders = (pizza) => {
     dispatch(add(pizza));
   }
