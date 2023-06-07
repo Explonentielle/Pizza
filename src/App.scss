@@ -10,7 +10,7 @@
     padding: 2rem;
     margin: 0;
     height: 100vh;
-    background-image: url(../img/background-pizza.jpg);
+    background-image: url(./img/background-pizza.jpg);
     background-size: cover;
 
     header { 
@@ -53,8 +53,6 @@
     }
 }
 
-
-
 .newOrder {
     background-color: rgb(0, 105, 148);
 }
@@ -65,4 +63,52 @@
 
 .payOrder {
     background-color: rgb(1, 145, 48);
+}
+
+.pizzaRenderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    
+
+    .pizzaContainer {
+        position: relative;
+        width: 30%;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgb(241, 241, 241);
+
+        .pizzaDetails {
+            width: 80%;
+            bottom: 0rem;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+
+            .pizzaName{
+                font-weight: bold
+            }
+            p {
+                margin: 0; 
+            }
+        }
+    
+        .pizzaImg {
+            width: 100%;
+        }
+    }
+
+}
+
+
+.ordersContainer {
+    display: flex;
+
+    .myOrder {
+        margin: 1rem;
+        width: 30%;
+        background-color: white;
+
+    }
 }

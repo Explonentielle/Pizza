@@ -6,12 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const App = () => {
-  const todos = useSelector(state => state)
-  const navigate = useNavigate();
-  const dispatch = useDispatch()
   
-
-
   return (
     <div className='home'>
       <header className='header'>
