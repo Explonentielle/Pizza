@@ -12,7 +12,7 @@ const Root = () => {
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App/>}/>
-      <Route exact path="/newOrder" element={<NewOrder/>}/>
+      <Route exact path="/newOrder/:id" element={<NewOrder/>}/>
       <Route exact path="/payOrder" element={<PayOrder/>}/>
       <Route exact path="/Orders" element={<Order/>}/>
       <Route path="*" element={<NotFound/>}/>

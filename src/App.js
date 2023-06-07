@@ -1,9 +1,6 @@
 import React from 'react'
 import "./App.scss"
-import { useDispatch, useSelector } from 'react-redux';
 import Cards from './components/Cards';
-import { useNavigate } from 'react-router-dom';
-
 
 const App = () => {
   
@@ -19,7 +16,6 @@ const App = () => {
           details="crée et enregister une nouvelle commande"
           img="🚚"
           classProp="newOrder"
-          
         />
         <Cards
           text="commande en cours"
@@ -34,9 +30,6 @@ const App = () => {
           classProp="payOrder"
         />
       </div>
-
-
-
     </div>
   )
 }
