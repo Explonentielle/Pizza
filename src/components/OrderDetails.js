@@ -7,6 +7,7 @@ import OrderItem from './OrderItem';
 const OrderDetails = ({id}) => {
   const order = useSelector(state => state.data.orders.find(order => order.id === id));
   console.log(order);
+  
 
   const orderRender = order.pizzas.map((item) => {
     return (
