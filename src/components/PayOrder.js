@@ -1,9 +1,23 @@
 import React from 'react'
 import Header from './Header'
 import { Col, Row } from 'antd';
-import OrderLine from './OrderLine';
+import { useSelector } from 'react-redux';
+import OrderList from './OrderList';
 
 const PayOrder = () => {
+
+  const cmds = useSelector(state => state.data.orders)
+  console.log(cmds)
+
+
+  const pizzasRender = cmds.map((item) => {
+    return (
+      <OrderList item={item}
+      />
+    )
+})
+
+
   return (
     <div className='home'>
       <Header/>
@@ -35,8 +49,8 @@ const PayOrder = () => {
             </Col>
           </Row>
           <hr></hr>
-        <OrderLine/>
-        <OrderLine/>
+          {pizzasRender}
+
 
         </div>
       </div>

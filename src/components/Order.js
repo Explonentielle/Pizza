@@ -3,31 +3,16 @@ import OrderDisplay from './OrderDisplay'
 import Header from './Header';
 import { useSelector } from 'react-redux';
 import { Commande } from './Commande';
+import OrderDetails from './OrderDetails';
+import OrderList from './OrderList';
 
 const Order = () => {
 
   const cmds = useSelector(state => state.data.orders)
+  console.log(cmds)
 
 
-  const RenderItems = () => {
 
-
-    const listItems = cmds.map((item) => {
-      return (
-        <Commande
-          key={item.id}
-          item={item}
-        />
-      );
-    });
-
-    return (
-      <div className="todos">
-        <h2>Mes Pizzas</h2>
-        {listItems}
-      </div >
-    );
-  }
 
   return (
     <div className='home'>
@@ -44,7 +29,8 @@ const Order = () => {
 
       <div class="cmdDetail">
         <p id="detailtxt">Détail de la commande n°aàodada</p>
-        {RenderItems}
+        {/* <OrderList/> */}
+
           <div class ="encartItem">
             <div class="encartItemElement">
               <p>Nom de la Pizza</p>

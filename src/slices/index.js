@@ -38,12 +38,14 @@ const dataSlice = createSlice({
           }
       );
     },
-  }
-})
+    removed: (state, {payload}) => {
+      state.orders.splice(payload, 1);
+    },
+}})
 
 
 
-export const { add, createOrder } = dataSlice.actions;
+export const { add, createOrder, removed } = dataSlice.actions;
 export default dataSlice.reducer;
 
 

@@ -2,9 +2,14 @@ import React from 'react'
 
 const OrderItem = ({name, price}) => {
   return (
-    <div>
+    <div class ="detailCmd">
+      <div>
         <p>{name}</p>
-        <p>{price}</p>
+        <p>? x {price}€</p>
+      </div>
+      <div>
+        <p>{price}€</p>
+      </div>
     </div>
   )
 }
