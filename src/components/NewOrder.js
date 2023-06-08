@@ -8,7 +8,6 @@ import Header from './Header';
 
 const NewOrder = () => {
   const   idOrder  = useParams()
-  console.log(idOrder)
   const pizzaRender = choiceList.map((item) => {
       return (
         <Pizza key={item.id} id={item.id} name={item.name} price={item.price} img={item.img} />
