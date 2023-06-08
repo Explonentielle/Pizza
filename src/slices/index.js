@@ -41,6 +41,19 @@ const dataSlice = createSlice({
     removed: (state, {payload}) => {
       state.orders.splice(payload, 1);
     },
+    modified: (state, action) => {
+
+      const { id, name, price } = action.payload
+      const orderIndex = state.orders.find(order => order.id === id);
+      state.orders[orderIndex].pizzas.push(
+          {
+            id,
+            name,
+            price,
+          }
+      );
+
+    },
 }})
 
 

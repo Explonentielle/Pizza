@@ -5,11 +5,20 @@ import { useSelector } from 'react-redux';
 import { Commande } from './Commande';
 import OrderDetails from './OrderDetails';
 import OrderList from './OrderList';
+import { Cmd } from './Cmd';
 
 const Order = () => {
 
   const cmds = useSelector(state => state.data.orders)
   console.log(cmds)
+
+
+  const CmdRender = cmds.map((item) => {
+    return (
+      <Cmd item={item}
+      />
+    )
+})
 
 
 
@@ -26,6 +35,7 @@ const Order = () => {
               </select>
         </div>
 
+        {CmdRender}
 
       <div class="cmdDetail">
         <p id="detailtxt">Détail de la commande n°aàodada</p>

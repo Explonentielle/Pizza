@@ -13,8 +13,12 @@ const OrderDisplay = ({ items, total }) => {
 
   return (
     <div>
-    {OrderItems}
-    <div>Soit un total de {total}€</div>
+      {OrderItems}
+      <div>Soit un total de {total}€</div>
+
+
+
+
     </div>
   )
 }
