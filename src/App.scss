@@ -115,6 +115,26 @@
 }
 
 
+.cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.7rem;
+    align-items: center;
+
+
+    .detailsCont {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    
+        p {
+            margin: 0rem;
+        }
+    }
+}
+
+
 
 
 // ----------------------------------------
