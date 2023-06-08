@@ -63,7 +63,7 @@ const dataSlice = createSlice({
 
 
 
-export const { add, createOrder, removed } = dataSlice.actions;
+export const { add, createOrder, removed, modified } = dataSlice.actions;
 export default dataSlice.reducer;
 
 
