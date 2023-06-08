@@ -38,6 +38,9 @@ const dataSlice = createSlice({
           }
       );
     },
+    removed: (state, {payload}) => {
+      state.orders.splice(payload, 1);
+    },
     modified: (state, action) => {
       const { id, name, price, quantité } = action.payload;
     
@@ -59,7 +62,8 @@ const dataSlice = createSlice({
 
 
 
-export const { add, createOrder, modified } = dataSlice.actions;
+
+export const { add, createOrder, removed } = dataSlice.actions;
 export default dataSlice.reducer;
 
 
