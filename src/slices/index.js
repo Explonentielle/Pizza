@@ -38,12 +38,28 @@ const dataSlice = createSlice({
           }
       );
     },
+    modified: (state, action) => {
+      const { id, name, price, quantité } = action.payload;
+    
+      state.orders = state.orders.map(order => {
+        if (order.id === id) {
+          return {
+            ...order,
+            pizzas: [
+              ...order.pizzas,
+              { id, name, price, quantité }
+            ]
+          };
+        }
+        return order;
+      });
+    },
   }
 })
 
 
 
-export const { add, createOrder } = dataSlice.actions;
+export const { add, createOrder, modified } = dataSlice.actions;
 export default dataSlice.reducer;
 
 
