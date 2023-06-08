@@ -2,18 +2,25 @@ import React from 'react'
 import OrderDisplay from './OrderDisplay'
 import Header from './Header';
 import { useSelector } from 'react-redux';
-import { Commande } from './Commande';
 import OrderDetails from './OrderDetails';
 import OrderList from './OrderList';
 import { Cmd } from './Cmd';
+import { useParams } from 'react-router-dom';
 
 const Order = () => {
+  const   idOrder2  = useParams()
+  console.log(idOrder2)
 
-  const cmds = useSelector(state => state.data.orders)
-  console.log(cmds)
+  const cmds2 = useSelector(state => state.data.orders)
+  console.log(cmds2)
 
+  // const cmds = useSelector(state => state.data.orders)
+  const neworder = useSelector(state => state.data.orders.find(order => order.id == idOrder2.id))
+  console.log(neworder)
 
-  const CmdRender = cmds.map((item) => {
+  const arrNewOrd = [{neworder}]
+
+  const CmdRender = arrNewOrd.map((item) => {
     return (
       <Cmd item={item}
       />
@@ -37,10 +44,11 @@ const Order = () => {
 
         {CmdRender}
 
-      <div class="cmdDetail">
-        <p id="detailtxt">Détail de la commande n°aàodada</p>
-        {/* <OrderList/> */}
 
+      {/* <div class="cmdDetail">
+        <p id="detailtxt">Détail de la commande n°aàodada</p> */}
+        {/* <OrderList/> */}
+{/* 
           <div class ="encartItem">
             <div class="encartItemElement">
               <p>Nom de la Pizza</p>
@@ -56,7 +64,7 @@ const Order = () => {
               <p>Encaisser la commande</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
 

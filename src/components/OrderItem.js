@@ -1,14 +1,18 @@
 import React from 'react'
 
-const OrderItem = ({name, price, quantite}) => {
+const OrderItem = ({name, price, quantite, id}) => {
   return (
-    <div className='cont'>
-        <div className='detailsCont'>
+    <div class="cmdDetail">
+
+      <div class ="encartItem">
+                  <div class="encartItemElement">
           <p>{name}</p>
           <p>({quantite} x {price})</p>
-        </div>
-        <p>{Math.round(price*quantite * 100) / 100}</p>
+          </div>
+                  <p class="encartItemElement">{Math.round(price*quantite * 100) / 100}€</p>
+                </div>
     </div>
+    
   )
 }
 

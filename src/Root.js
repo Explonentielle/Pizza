@@ -14,7 +14,8 @@ const Root = () => {
       <Route exact path="/" element={<App/>}/>
       <Route exact path="/newOrder/:id" element={<NewOrder/>}/>
       <Route exact path="/payOrder" element={<PayOrder/>}/>
-      <Route exact path="/Orders" element={<Order/>}/>
+      <Route exact path="/Order/" element={<Order/>}/>
+      <Route exact path="/Orders/:id" element={<Order/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     </BrowserRouter>

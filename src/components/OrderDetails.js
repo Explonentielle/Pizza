@@ -29,7 +29,7 @@ const OrderDetails = ({id}) => {
   const orderRender = transformedPizzas.map((item) => {
     return (
       <OrderItem
-        name={item.name} price={item.price} quantite={item.quantite} key={item.id}
+        name={item.name} price={item.price} quantite={item.quantite} key={item.id} id={id}
       />
     )
 })
@@ -37,9 +37,18 @@ const OrderDetails = ({id}) => {
 
   return ( 
     <div>
-      <div>{id}</div>
+      {/* <div>{id}</div> */}
+      <p id="detailtxt">Détail de la commande n°{id}</p>
+
       {orderRender}
-      <p>Sois un total de : {total} €</p>
+      <div id="cmdEnd">
+            <div class="cmdEndElement Orders">
+              <p>Soit un total de {total}€</p>
+            </div>
+            {/* <div class="cmdEndElement payOrder">
+              <p>Encaisser la commande</p>
+            </div> */}
+          </div>
     </div>
 
   )

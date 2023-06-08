@@ -45,7 +45,7 @@ const index = cmds.indexOf(item);
         <Col span={6}>
           
           <div class="divButtons">
-          <button class="listButton" id="edit" onClick={() => navigate(`/newOrder/${editLink}`)}>
+          <button class="listButton" id="edit" onClick={() => navigate(`/Orders/${editLink}`)}>
             <FaEdit class="icon" />
           </button>
 

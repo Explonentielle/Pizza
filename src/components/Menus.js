@@ -7,25 +7,25 @@ const choiceList = [
     {
         id: 1,
         img: margarita,
-        name: "margarita",
+        name: "Marguerita",
         price: 7.90
     },
     {
         id: 2,
         img: pepperoni,
-        name: "pepperoni",
+        name: "Pepperoni",
         price: 11.90
     },
     {
         id: 3,
         img: reine,
-        name: "reine",
+        name: "Reine",
         price: 10.90
     },
     {
         id: 4,
         img: fromage,
-        name: "fromage",
+        name: "Fromage",
         price: 11.90
     }
 ]
